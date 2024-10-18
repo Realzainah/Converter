@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <form id="currency-form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" step="0.01" placeholder="Enter amount...">
+        <label for="from">From:</label>
+        <select id="from">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="ADA">ADA</option>
+            <option value="USD">USD</option>
+        </select>
+        <label for="to">To:</label>
+        <select id="to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="NAIRA">NAIRA</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+    <div id="price-container">
+        <h2>Current Price</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody id="price-data">
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html
